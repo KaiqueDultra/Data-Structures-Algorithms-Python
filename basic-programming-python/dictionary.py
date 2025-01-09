@@ -1,3 +1,10 @@
+'''
+Dicionário: Crie um dicionário para armazenar o nome e a nota de 3 alunos, fazendo a leitura 
+dos valores por meio de uma estrutura de repetição. Depois, crie uma nova estrutura de repetição 
+para somar todas as notas e retornar a média.
+
+'''
+
 def dicionario():
     dicionario_notas = {}
     soma = 0
@@ -9,7 +16,7 @@ def dicionario():
     print("-------------------------")
     print(dicionario_notas)
     
-    for _, notas in dicionario_notas.items():
+    for notas in dicionario_notas.values():
         soma += notas
         media = soma / 3
     print("-------------------------")   
